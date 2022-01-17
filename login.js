@@ -96,6 +96,9 @@ function login(){
           alert('success!!')
           window.location.replace("./index2.html")
       }
+      else{
+          alert('Invalid username or password')
+      }
   }
   
 
