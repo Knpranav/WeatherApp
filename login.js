@@ -35,13 +35,9 @@ togglePassword1.addEventListener('click', function (f) {
     this.classList.toggle('bi-eye');
 });
 
-
-function check(){
-    var Uname = 'Uname'
-    var Pass = 'Pass'
-    
-  
-      
+var Uname = 'Uname'
+var Pass = 'Pass'
+function check(){      
           var usernameRegex= /\w{8,15}/
           var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
           var passwordRegex= /^(?=.*[0-9])(?=.*[!@#$%&*])[a-zA-Z0-9!@#$%&*]{7,15}$/
@@ -85,19 +81,17 @@ function check(){
 
 
 function login(){
-    var Uname = 'Uname'
-    var Pass = 'Pass'
     let inp_username = document.getElementById('username').value
     let inp_pass = document.getElementById('pass').value
     let storedUname = localStorage.getItem(Uname)
     let storedPass = localStorage.getItem(Pass)
-     if(inp_username == storedUname && inp_pass == storedPass)
+     if((inp_username == storedUname)&& (inp_pass == storedPass))
         {
           alert('success!!')
           window.location.replace("./index2.html")
       }
-      else{
-          alert('Invalid username or password')
+      else if((inp_username !== storedUname)&& (inp_pass !== storedPass)){
+          alert('Invalid entry')
       }
   }
   
