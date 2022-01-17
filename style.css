@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+  
+    overflow: hidden;
+    background-image: linear-gradient(-135deg,rgb(112, 2, 139),rgb(18, 70, 240));
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+
+}
+.body{
+    width: 100%;
+    overflow: hidden;
+    min-height: 100%;
+}
+.fr{
+    display: grid;
+    grid-template-rows:1fr 2fr;   
+}
+.svg{
+background-color: white;
+overflow: hidden;
+height: 500px;
+}
+
+#svg{
+    height: 200px;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    position:relative;
+    z-index: 1;
+    color: white;
+    background: none;
+    font-size: 24px;
+    padding-top: 10px;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 10px rgb(153, 152, 152);
+}
+.card{
+    position: relative;
+    box-shadow:5px 5px 20px rgb(0, 0, 0,0.3);
+    padding: 10% 0 10% 0;
+    background-image: linear-gradient(155deg,rgb(255, 255, 255,0.2),rgba(253, 251, 251, 0.6));
+    text-align: center;
+    width:80%;
+    border-radius: 15px;
+    margin:30px auto;   
+}
+input{
+    background: none;
+    outline: none;
+    line-height: 30px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1.4px solid rgb(253, 193, 198);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+a{
+    border: none;
+    outline:none ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    color:rgb(244, 247, 250);
+    background-color: none;
+    background: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns:repeat(1,100%);
+    justify-content: center;
+    justify-items: center;
+    padding: 1.5em 0 0.5em 0;
+    gap: 0.5em;
+
+    
+}
+::placeholder { 
+    color: rgb(211, 209, 209);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+   }
+
+button{
+    border: none;
+    font-size: 0.6em;
+    height: 25px;
+    background: none;
+    border-radius: 3px;
+    text-shadow: 0px 0px 3px rgb(172, 169, 169);
+    letter-spacing: 1px;
+    color:rgb(244, 247, 250);
+    background-color: rgb(42, 148, 125);
+    box-shadow: 2px 2px 5px rgb(65, 64, 64);
+    overflow: hidden;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 40%;
+    transition: 0.3s;
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color: rgb(83, 201, 142);
+    transition: 0.4s ease-in-out;
+    
+}
+i {
+    margin-left: -20px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 20px;
+    color:black;
+}
+ @media only screen and (min-width: 600px) {
+  .card{
+      width: 50%;
+      font-size: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+  }
+  .fr{
+      display:block;
+  }
+ 
+  .buttons{
+      width: 70%;
+      border-radius: 10px;
+      margin: 0 auto;
+    
+  }
+  
+  .svg{
+    width: auto;
+    height: 20px;
+    
+  }
+  h2{
+      width: 500px;
+      padding: 5px;
+      margin: 0 auto;
+  }
+  h2{
+    animation-name: load;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s ;
+
+    
+  }
+  @keyframes load {
+      from{
+        color: rgb(240, 248, 255,0);
+        text-shadow: none;
+      }
+    
+      
+      to{
+        color: aliceblue;
+        text-shadow: 0px 0px 10px;
+        
+      }
+      
+  }
+
+ 
+  } 

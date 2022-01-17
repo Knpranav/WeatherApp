@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1500px){
+    body{
+        background-image: url('https://source.unsplash.com/1500x1058/?landscape');
+    }
+}
+@media only screen and (max-width: 1000px){
+    body{
+        background-image: url('https://source.unsplash.com/1000x800/?landscape');
+    }
+    .container{
+        display:flex;
+        gap: 10px;
+    
+    }
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url('https://source.unsplash.com/600x1058/?landscape');
+    }
+    .container{
+        display:flex;
+        gap: 5px;
+    
+    }
+}
+.card{
+    background-image:linear-gradient(-45deg,rgba(255, 255, 255, 0.7),rgb(83, 79, 79,0.9)) ;
+    padding: 2em;
+    color: white;
+    border-radius: 30px;
+    max-width: 420px;
+    width: 100%;
+    margin:1em;
+}
+.search{
+    height: 30px;
+    padding: 0.15em;
+    overflow:hidden;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 0px;
+    border-radius:20px;
+    box-shadow:.8rem .8rem 2rem rgb(29, 29, 29), 
+    -.2rem -.2rem 2rem rgb(255, 255, 255);
+    align-items: center;
+}
+.container{
+    display:flex;
+    gap: 30px;
+
+}
+.img,.text{
+    display: block;
+    justify-content: center;
+}
+img{
+    background-color: rgb(14, 14, 247,0.4);
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    margin: auto 0;
+    text-align: center;
+}
+.description{
+    margin: auto auto;
+    background-color:rgb(14, 14, 247,0.4);
+    padding: 5px;
+    border-radius: 14px;
+
+}
+.sub{
+    display: flex;
+    gap: 5px;
+    align-content: center;
+}
+.search-bar{
+    font-size: 20px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border:none;
+    height: 100%;
+    color: aliceblue;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 15px;
+    background:none;
+    padding-left: 1em;
+    letter-spacing: 0.5px;
+
+
+}
+.svg{  
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    
+    color: rgb(255, 255, 255);
+    height: 2em;
+    width: 2em;
+    margin-left: 2px;
+    transition: 0.3s ease-in-out;
+    
+}
+.svg:hover{
+    background-color: rgb(7, 189, 128,0.7);
+}
