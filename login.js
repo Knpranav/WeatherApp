@@ -51,23 +51,24 @@ function check(){
        var password = document.getElementById('pass').value
        var phone = document.getElementById('phoneNumber').value
   
-       localStorage.setItem(Uname,username)
-       localStorage.setItem(Pass,password)
             
     if(usernameRegex.test(username)==true)
     { 
         if(emailRegex.test(email)==true)
         { 
             
-          if(passwordRegex.test(password)==true)           {
+          if(passwordRegex.test(password)==true)
+          {
              if(phonenumberRegex.test(phone)==true)
                  {  
+                    localStorage.setItem(Uname,username)
+                    localStorage.setItem(Pass,password)
                    alert('Success!!')
                    window.location.replace("./index.html")
                  }    
 
-            else
-            alert('invalid phone-number')
+              else
+              alert('invalid phone-number')
            
           }
           else
@@ -90,8 +91,7 @@ function login(){
     let inp_pass = document.getElementById('pass').value
     let storedUname = localStorage.getItem(Uname)
     let storedPass = localStorage.getItem(Pass)
-    // if(inp_username == storedUname && inp_pass == storedPass)
-    if(1==0)
+     if(inp_username == storedUname && inp_pass == storedPass)
         {
           alert('success!!')
           window.location.replace("./index2.html")
