@@ -35,8 +35,7 @@ togglePassword1.addEventListener('click', function (f) {
     this.classList.toggle('bi-eye');
 });
 
-var Uname = 'Uname'
-var Pass = 'Pass'
+
 function check(){      
           var usernameRegex= /\w{8,15}/
           var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -81,14 +80,16 @@ function check(){
 
 
 function login(){
-    let inp_username = document.getElementById('username').value
+    let Uname = 'Uname'
+    let Pass = 'Pass'
+    let inp_username = document.getElementById('user').value
     let inp_pass = document.getElementById('pass').value
     let storedUname = localStorage.getItem(Uname)
     let storedPass = localStorage.getItem(Pass)
-     if((inp_username == storedUname)&& (inp_pass == storedPass))
+     if((inp_username == storedUname) && (inp_pass == storedPass))
         {
           alert('success!!')
-          window.location.replace("./index2.html")
+          window.location.replace("./index1.html")
       }
       else if((inp_username !== storedUname)&& (inp_pass !== storedPass)){
           alert('Invalid entry')
