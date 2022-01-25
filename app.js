@@ -6,7 +6,8 @@ var weather = {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city+ "&units=metric&appid="+this.apiKey)
         .then((res)=>res.json())
         //  .then((data)=>console.log(data))
-          .then((data)=> {this.displayWeather(data)
+          .then((data)=> {
+            this.displayWeather(data)
             console.log(data);
           });  
     },
