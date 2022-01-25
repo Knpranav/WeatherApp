@@ -15,7 +15,7 @@ body{
 }
 @media only screen and (max-width: 1000px){
     body{
-        background-image: url('https://source.unsplash.com/1000x800/?landscape');
+        background-image: url('https://source.unsplash.com/1000x1058/?landscape');
     }
     .container{
         display:flex;

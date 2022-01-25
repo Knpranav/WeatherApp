@@ -78,6 +78,10 @@ function check(){
     alert('Invalid Username')
 }
 
+function brief(){
+    alert('Username must be 8-15 chrs \n Password a min of 7chrs /with at least one Cap/Num/Special')
+}
+
 
 function login(){
     let Uname = 'Uname'
