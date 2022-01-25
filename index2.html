@@ -11,15 +11,15 @@
     <title>form</title>
 </head>
 <body>
-    <h2>Regester Here</h2>
+    <h2>Register Here</h2>
     <div class="form">
-    <input required type="text" placeholder="Email" id='email' autocomplete="off">
-    <input required type="text" placeholder="Username" id='username' autocomplete="off">
-    <input type="number" placeholder="ph Number" id='phoneNumber' autocomplete="off">
+    <input required type="text" placeholder="Email" id='email' autocomplete="off"  onkeypress="jumpNext(event,'username')" autofocus> 
+    <input required type="text" placeholder="Username" id='username' autocomplete="off" onkeypress="jumpNext(event,'phoneNumber')">
+    <input type="number" placeholder="ph Number" id='phoneNumber' autocomplete="off" onkeypress="jumpNext(event,'pass')">
     <div class="password">
-        <input required type="password" name="" id="pass"placeholder='password' autocomplete="off">
+        <input required type="password" name="" id="pass"placeholder='password' autocomplete="off" onkeypress="jumpNext(event,'pass1')">
         <i class="bi bi-eye-slash" id="togglePassword"></i>
-        <input required type="password" name="" id="pass1" placeholder="re-enter password" autocomplete="off">
+        <input required type="password" name="" id="pass1" placeholder="re-enter password" autocomplete="off" onkeypress="jumpNext(event,'submit')">
         <i class="bi bi-eye-slash" id="togglePassword1"></i>
     </div>
     <br>

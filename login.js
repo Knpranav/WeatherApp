@@ -1,16 +1,18 @@
+//To focus on next element upon enter
 function jumpNext(event,autoMove){
     var x = event.which
     if(x==13){
          document.getElementById(autoMove).focus();
     }
 }
-
+//To re-Window upon Enter
 function enter(event){
     var key = event.which
     if(key==13)
     window.location.href = 'index1.html'
 }
 
+//To change color or Enter button pressing Enter
 function edit(){
     let ele = document.getElementById('enter')
     ele.style.backgroundColor = 'rgb(83, 201, 142)'
@@ -18,17 +20,18 @@ function edit(){
     ele.style.transform = 'translateY(-5px)'
 
 }
-
+//toggling password to change visibility
 const togglePassword = document.querySelector('#togglePassword');
 const togglePassword1 = document.querySelector('#togglePassword1');
 var password = document.querySelector('#pass');
 var password1 = document.querySelector('#pass1');
-
+//toggling password to change visibility
 togglePassword.addEventListener('click', function (e) {
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     pass.setAttribute('type', type);
     this.classList.toggle('bi-eye');
 });
+//toggling password to change visibility
 togglePassword1.addEventListener('click', function (f) {
     const type = password1.getAttribute('type') === 'password' ? 'text' : 'password';
     pass1.setAttribute('type', type);
@@ -56,10 +59,10 @@ function check(){
           {
              if(phonenumberRegex.test(phone)==true)
                  {  
+                    alert('Success!!')
                     localStorage.setItem(Uname,username)
                     localStorage.setItem(Pass,password)
-                   alert('Success!!')
-                   window.location.replace("./index.html")
+                    window.location.replace("./index.html")
                  }    
 
               else
