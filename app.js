@@ -1,5 +1,3 @@
-
-
 //our object weather
 var weather = {
     'apiKey':'ed62e0360339103127f54550ed173945',

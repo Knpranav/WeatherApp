@@ -33,6 +33,7 @@ input:invalid{
     margin: 0 auto;
     border: none;
     width: 7em;
+    height: 30px;
     background-color: rgba(161, 161, 161, 0.45);
     box-shadow:.8rem .8rem 2rem rgb(29, 29, 29), 
     -.2rem -.2rem 2rem rgb(255, 255, 255);
@@ -79,6 +80,15 @@ h2{
         color:none;
     }
     
+}
+a{
+    background:none;
+    text-decoration: none;
+    width: 7em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    border: none;
+    color: white;
 }
 #submit:hover{
     border-radius: 0;

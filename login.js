@@ -38,44 +38,47 @@ togglePassword1.addEventListener('click', function (f) {
     this.classList.toggle('bi-eye');
 });
 
-
+//regex checking
+const usernameRegex= /\w{8,15}/
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const passwordRegex= /^(?=.*[0-9])(?=.*[!@#$%&*])[a-zA-Z0-9!@#$%&*]{7,15}$/
+const phonenumberRegex = /^\d{10}$/
+const Uname='uname'
+const Pass='pass'
 function check(){      
-          var usernameRegex= /\w{8,15}/
-          var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-          var passwordRegex= /^(?=.*[0-9])(?=.*[!@#$%&*])[a-zA-Z0-9!@#$%&*]{7,15}$/
-          var phonenumberRegex = /^\d{10}$/
+      
        var username = document.getElementById('username').value
        var email = document.getElementById('email').value
        var password = document.getElementById('pass').value
        var phone = document.getElementById('phoneNumber').value
+       console.log(username);
+       console.log(password);
   
             
     if(usernameRegex.test(username)==true)
     { 
         if(emailRegex.test(email)==true)
-        { 
-            
+        {   
           if(passwordRegex.test(password)==true)
           {
              if(phonenumberRegex.test(phone)==true)
                  {  
                     alert('Success!!')
+                    //saving unsername and password in the local storage
                     localStorage.setItem(Uname,username)
                     localStorage.setItem(Pass,password)
+                    //replacing location upon succesful register
                     window.location.replace("./index.html")
+                   
                  }    
-
               else
               alert('invalid phone-number')
-           
           }
           else
           alert('Invalid password')
-         
         }
         else
         alert('Invalid email')
-       
     }
     else
     alert('Invalid Username')
@@ -85,19 +88,20 @@ function brief(){
     alert('Username must be 8-15 chrs \n Password a min of 7chrs /with at least one Cap/Num/Special')
 }
 
-
+//Login checking
 function login(){
-    let Uname = 'Uname'
-    let Pass = 'Pass'
+
     let inp_username = document.getElementById('user').value
     let inp_pass = document.getElementById('pass').value
-    let storedUname = localStorage.getItem(Uname)
-    let storedPass = localStorage.getItem(Pass)
+    let storedUname = localStorage.getItem('uname')
+    let storedPass = localStorage.getItem('pass')
      if((inp_username == storedUname) && (inp_pass == storedPass))
         {
+          //during successful login
           alert('success!!')
           window.location.replace("./index1.html")
       }
+      //during unsuccessful login
       else if((inp_username !== storedUname)&& (inp_pass !== storedPass)){
           alert('Invalid entry')
       }
