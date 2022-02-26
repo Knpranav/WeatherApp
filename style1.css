@@ -4,7 +4,7 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     background-repeat: no-repeat;
 }
@@ -114,6 +114,14 @@ img{
     transition: 0.3s ease-in-out;
     
 }
+.temp{
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: rgb(57, 64, 70,0.5);
+}
 .svg:hover{
     background-color: rgb(7, 189, 128,0.7);
+}
+.min,.max,.humidity,.wind{
+    font-weight: 700;
 }

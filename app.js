@@ -28,10 +28,10 @@ var weather = {
         document.querySelector('.icon').src='https://openweathermap.org/img/wn/'+ icon + '.png'
         document.querySelector('.temp').innerHTML= temp+'°C'
         document.querySelector('.description').innerHTML= description
-        document.querySelector('.humidity').innerHTML = 'Humidity : '+humidity+'%'
-        document.querySelector('.max').innerHTML = ' Max : '+temp_max+'°C';
-        document.querySelector('.min').innerHTML = ' Min : '+temp_min+'°C';
-        document.querySelector('.wind').innerHTML = 'Wind Speed : '+ speed+'kmph'
+        document.querySelector('.humidity').innerHTML = 'HUMIDITY : '+humidity+'%'
+        document.querySelector('.max').innerHTML = ' MAX : '+temp_max+'°C';
+        document.querySelector('.min').innerHTML = ' MIN : '+temp_min+'°C';
+        document.querySelector('.wind').innerHTML = 'WIND SPEED : '+ speed+'kmph'
         document.querySelector('.search-bar').value=''
     
     },
